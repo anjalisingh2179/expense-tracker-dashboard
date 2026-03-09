@@ -1,0 +1,250 @@
+body{
+font-family: Arial;
+background:#F4F6F8;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:300px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#0A2540;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* Main Layout */
+
+body{
+margin:0;
+font-family:Arial;
+background:#F4F6F8;
+}
+
+/* MAIN LAYOUT */
+
+.main-container{
+display:flex;
+height:80vh;
+width:80%;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:200px;
+display: flex;
+background:#0A2540;
+color:white;
+padding:20px;
+max-height:10vh;
+}
+
+/* CONTENT */
+
+.content{
+flex:1;
+padding:30px;
+}
+
+/* TOP SECTION */
+
+.top-section{
+display:flex;
+gap:40px;
+align-items: flex-start;
+margin-bottom:40px;
+}
+
+/* CARDS */
+
+.cards{
+display:flex;
+flex-direction:column;
+gap:20px;
+min-width:250px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+min-height: 70px;
+}
+
+.balance{
+border-left:5px solid #3498db;
+}
+
+.income{
+border-left:5px solid #2ecc71;
+}
+
+.expense{
+border-left:5px solid #e74c3c;
+}
+
+/* CHART */
+
+.chart-container{
+width:500px;
+margin-left: 30px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* TRANSACTIONS */
+
+.transactions{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+table{
+min-width:600px;
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th, table td{
+padding:10px;
+border-bottom:1px solid #ddd;
+text-align:center;
+}
+
+table th{
+background:#f4f6f8;
+}
+
+/* BUTTONS */
+
+.add-btn{
+background:#0A2540;
+color:white;
+padding:8px 15px;
+border-radius:5px;
+text-decoration:none;
+display:inline-block;
+margin-bottom:10px;
+}
+
+.delete-btn{
+background:#e74c3c;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+text-decoration:none;
+}
+
+.edit-btn{
+background:#3498db;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+text-decoration:none;
+margin-right:5px;
+}
+
+.filter-box{
+margin-bottom:10px;
+}
+
+.filter-box select{
+padding:6px;
+border-radius:5px;
+}
+
+.filter-box{
+margin-bottom:15px;
+}
+
+.filter-box select{
+padding:6px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px){
+
+.main-container{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+height:auto;
+text-align:center;
+}
+
+.content{
+padding:15px;
+}
+
+.top-section{
+flex-direction:column;
+gap:20px;
+}
+
+.cards{
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+}
+
+.card{
+flex:1;
+min-width:150px;
+}
+
+.chart-container{
+width:100%;
+margin: 30px;
+}
+
+.transactions{
+overflow-x:auto;
+}
+
+}
+
+.monthly-section{
+margin-top:40px;
+}
+
+.monthly-chart-container{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+max-width:700px;
+}
+
+#monthlyChart{
+width:100% !important;
+height:350px !important;
+}
